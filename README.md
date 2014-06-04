@@ -9,6 +9,7 @@ This extension just add the relevant html5 attributes to the fields objects (dep
 
 following python code:
 
+```python
 from wtforms import Form, validators
 from wtforms.ext.jqBootstrapValidation.fields import StringField, BooleanField
 
@@ -21,13 +22,14 @@ test = RegistrationForm()
 
 for field in test:
     print field()
+```
 
 should output:
-
+```html
 <input id="username" maxlength="25" minlength="-1" name="username" type="text" value="">
 <input id="email" maxlength="35" minlength="6" name="email" type="text" value="">
 <input id="accept_rules" name="accept_rules" required type="checkbox" value="y">
-
+```
 
 note the attribute that are setted automaticly.
 
