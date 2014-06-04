@@ -7,7 +7,7 @@ This extension just add the relevant html5 attributes to the fields objects (dep
 
 
 
-following python code:
+the following python code:
 
 ```python
 from wtforms import Form, validators
@@ -31,11 +31,9 @@ should output:
 <input id="accept_rules" name="accept_rules" required type="checkbox" value="y">
 ```
 
-note the attribute that are setted automaticly.
-
-see: http://reactiveraven.github.io/jqBootstrapValidation/ to understant why there are these attribute
+note the attributes that are setted automaticly.
 
 Disclamer: 
 
-Don't use this, this is just a proof of concept to learn how to make some wtforms extension, i don't even know how to install it (just paste the directory in your wtform ext directory for now). then you will need to somehow add a link to relevant javascript (google jqbootrapvalidation).
+Don't use this, this is just a proof of concept to learn how to make some wtforms extension, i don't even know how to install or distribute it yet (just paste the directory in your wtform ext directory for now) and it only works for stringfield or boolean fields and you will need to somehow add a link to relevant javascript, see http://reactiveraven.github.io/jqBootstrapValidation/
 
